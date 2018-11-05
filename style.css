@@ -1,0 +1,360 @@
+/**
+ * 这是 kagami-the-jekyll-theme 主题个人适配 Typecho 0.8 修改版
+ *
+ * @package Kagami Theme
+ * @author 小铁匠
+ * @version 1.0.0
+ * @link https://flippedd.com
+ */
+
+
+/* latin */
+@font-face {
+    font-family: 'Crimson Text';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Crimson Text Regular'), local('CrimsonText-Regular'), url(./font/wlp2gwHKFkZgtmSR3NB0oRJfbwhT.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin */
+@font-face {
+    font-family: 'Crimson Text';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Crimson Text Bold'), local('CrimsonText-Bold'), url(./font/wlppgwHKFkZgtmSR3NB0oRJX1C1GDNNQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+    font-family: 'Press Start 2P';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Press Start 2P Regular'), local('PressStart2P-Regular'), url(./font/e3t4euO8T-267oIAQAu6jDQyK3nYivN04w.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+    font-family: 'Press Start 2P';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Press Start 2P Regular'), local('PressStart2P-Regular'), url(./font/e3t4euO8T-267oIAQAu6jDQyK3nRivN04w.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+    font-family: 'Press Start 2P';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Press Start 2P Regular'), local('PressStart2P-Regular'), url(./font/e3t4euO8T-267oIAQAu6jDQyK3nWivN04w.woff2) format('woff2');
+    unicode-range: U+0370-03FF;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Press Start 2P';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Press Start 2P Regular'), local('PressStart2P-Regular'), url(./font/e3t4euO8T-267oIAQAu6jDQyK3nbivN04w.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Press Start 2P';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Press Start 2P Regular'), local('PressStart2P-Regular'), url(./font/e3t4euO8T-267oIAQAu6jDQyK3nVivM.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+html {
+    box-sizing: border-box
+}
+
+*, *:before, *:after {
+    box-sizing: inherit
+}
+
+body {
+    -webkit-font-smoothing: antialiased
+}
+
+*, *:before, *:after {
+    -webkit-font-smoothing: inherit
+}
+
+[lang^="zh-Hans"] {
+    line-height: 1.8;
+    font-family: "Crimson Text", "Kagami SC", sans-serif, "Kagami Emoji";
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1em;
+    font-weight: normal;
+    margin: 0
+}
+
+img, video {
+    max-width: 100%;
+    height: auto
+}
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+@font-face {
+    font-family: "Kagami SC";
+    src: local("Songti SC Regular"), local(STSongti-SC-Regular);
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Kagami SC";
+    src: local("Songti SC Bold"), local(STSongti-SC-Bold);
+    font-weight: bold;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Kagami TC";
+    src: local("Songti TC Regular"), local(STSongti-TC-Regular);
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Kagami TC";
+    src: local("Songti TC Bold"), local(STSongti-TC-Bold);
+    font-weight: bold;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Kagami Emoji";
+    src: local("Apple Color Emoji"), local("Segoe UI Emoji"), local("Segoe UI Symbol"), local("Noto Color Emoji"), local("Android Emoji")
+}
+
+html {
+    height: 100%;
+    overflow-x: hidden
+}
+
+body {
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px
+}
+
+@media screen and (min-width: 680px) {
+    .wrapper {
+        padding-left: 80px;
+        padding-right: 80px
+    }
+}
+
+article h1, article h2, article h3, article h4, article h5, article h6, article p, article ul, article ol, article pre, article hr, article blockquote, article img:only-child {
+    display: block;
+    margin: 32px auto
+}
+
+
+.post-header {
+    margin-top: 112px;
+    margin-bottom: 112px
+}
+
+.post-cover {
+    margin-top: -80px
+}
+
+.site-footer {
+    padding-top: 32px;
+    padding-bottom: 32px
+}
+
+.site-footer .wrapper {
+    /*display: flex;*/
+    width: 100%;
+    flex-flow: row-reverse wrap;
+    justify-content: space-between;
+    align-items: center
+}
+
+.credits {
+    margin-left: -0.256em;
+    white-space: nowrap
+}
+
+.post-list-item {
+    position: relative;
+    margin-top: 32px;
+    margin-bottom: 64px
+}
+
+.post-item-cover {
+    width: 100vw;
+    position: absolute;
+    top: -32px;
+    bottom: -32px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background-color: #75664d;
+    background-size: cover;
+    background-position: center
+}
+
+.post-item-label {
+    position: relative
+}
+
+body {
+    color: #3c3c3c;
+    font-size: 18px;
+    font-weight: 300;
+    font-kerning: normal;
+    border-top: 2px solid currentColor
+}
+
+a, a:hover, a:visited {
+    text-decoration: none;
+    color: inherit
+}
+
+img {
+    max-width: 100%
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    display: block
+}
+
+h1 {
+    font-size: 1.8em
+}
+
+article p {
+    hanging-punctuation: allow-end
+}
+
+
+article em {
+    font-style: italic
+}
+
+article strong {
+    font-weight: bold
+}
+
+article a, article a:hover, article a:visited {
+    border-bottom: 1px dotted currentColor
+}
+
+article ul, article ol {
+    padding-left: 2.0em
+}
+
+article ul {
+    list-style-type: disc
+}
+
+
+article ol {
+    list-style-type: decimal
+}
+
+article hr {
+    border: none;
+    border-bottom: 1px solid #f0f0f0;
+    width: 30%
+}
+
+.site-title, .site-title:hover, .site-title:visited {
+    display: inline-block;
+    font-variant-caps: all-petite-caps;
+    font-size: 0.875em;
+    font-family: "Crimson Text", serif, "Kagami Emoji";
+    border-bottom: none;
+    white-space: nowrap
+}
+
+.post-title {
+    word-break: keep-all;
+    margin-top: -9px
+}
+
+.post-cover {
+    position: relative;
+    width: 100vw;
+    max-height: 40vh;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    overflow-y: hidden
+}
+
+.post-cover .post-cover-wrapper {
+    max-height: inherit;
+    position: relative;
+    transform: translateY(50%)
+}
+
+.post-cover img {
+    width: 100%;
+    margin: 0 !important;
+    transform: translateY(-50%)
+}
+
+.credits {
+    color: #6b5a5a;
+    font-size: 0.8em
+}
+
+.post-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+.post-item-link {
+    font-size: 1.4em
+}
+
+.post-item-meta {
+    font-variant-caps: all-petite-caps;
+    color: #a2a2a2
+}
+
+.post-list-item .post-item-cover {
+    opacity: 0.03;
+    transition: opacity 0.5s ease-out
+}
+
+.post-list-item:hover .post-item-cover {
+    opacity: 0.15;
+    transition: opacity 0.5s ease-out
+}
+
+
+.site-title, .site-title:visited, .site-title:hover {
+    margin-left: 1px
+}
+
+
+
+::-webkit-scrollbar-track-piece{background:#FFF;}
+::-webkit-scrollbar{width:8px;height:8px;}
+::-webkit-scrollbar-thumb{height:80px;background-color:#999;border:0;}
+::-webkit-scrollbar-thumb:hover{background-color:#666;}
+
+
+pre, blockquote{display:inline-block;padding:20px 30px;margin:10px 30px 10px 10px;}
+pre{background:#222;color:#DDD;font:14px 'Lucida Console',sans-serif;}
